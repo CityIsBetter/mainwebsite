@@ -274,9 +274,10 @@ footer{
     width: 500px;
     background-color: white;
     box-shadow: 0 0 20px 0 #999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
     position: absolute;
 }
 form{
