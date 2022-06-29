@@ -277,11 +277,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     border-radius: 15px;
-=======
-    border-radius:15px;
->>>>>>> 24367c93d7f954f7f08060e8fdd77ec06bb40569
     position: absolute;
     margin-top: 50px;
 }
