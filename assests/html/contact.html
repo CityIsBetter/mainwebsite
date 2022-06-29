@@ -22,6 +22,7 @@
             </ul>
         </nav>
         <section>
+<<<<<<< HEAD
             <div class="contact-box">
                 <form action="mail.php" method="POST">
                     <input type="text" id="name" class="input-field" placeholder="Your Name">
@@ -32,6 +33,34 @@
                 </form>
             </div>
                 
+=======
+        <div class="contact-box">
+            <form action="" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" class="input-field" placeholder="Your Name">
+                <input type="email" id="email" class="input-field" placeholder="Your Email">
+                <input type="subject" id="subject" class="input-field" placeholder="Subject">
+                <textarea type="text" id="msg" class="input-field textarea-field" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn2">Send Message</button>
+            </form>
+        </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        Host : "smtp.mailtrap.io",
+                        Username : "2d226827e29e14",
+                        Password : "e737f171ceaa07",
+                        To : 'mahesh.paul.j@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : document.getElementById("subject").value,
+                        Body : document.getElementById("msg").value
+                    }).then(
+                      message => alert("Your Message Sent Successfully!")
+                    );
+
+                }
+            </script>
+>>>>>>> 24367c93d7f954f7f08060e8fdd77ec06bb40569
         </section>
         
         <footer>
