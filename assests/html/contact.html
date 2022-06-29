@@ -23,16 +23,31 @@
         </nav>
         <section>
         <div class="contact-box">
-            <form action="">
-                <input type="text" class="input-field" placeholder="Your Name">
-                <input type="text" class="input-field" placeholder="Your Email">
-                <input type="text" class="input-field" placeholder="Subject">
-                <textarea type="text" class="input-field textarea-field" placeholder="Your Message"></textarea>
-                <button type="button" class="btn2">Send Message</button>
+            <form action="" onsubmit="sendEmail(); reset(); return false;">
+                <input type="text" id="name" class="input-field" placeholder="Your Name">
+                <input type="email" id="email" class="input-field" placeholder="Your Email">
+                <input type="subject" id="subject" class="input-field" placeholder="Subject">
+                <textarea type="text" id="msg" class="input-field textarea-field" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn2">Send Message</button>
             </form>
         </div>
-        <div class="sec">
-        <h2>This is Still Work In Progress...</h2></div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        Host : "smtp.elasticemail.com",
+                        Username : "mahesh.paul.j@gmail.com",
+                        Password : "92E0123BA7A8153C58EB1EAE5B155339755B",
+                        To : 'mahesh.paul.j@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : document.getElementById("subject").value,
+                        Body : document.getElementById("msg").value
+                    }).then(
+                      message => alert("Your Message Sent Successfully!")
+                    );
+
+                }
+            </script>
         </section>
         
         <footer>
