@@ -83,6 +83,7 @@ nav{
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
+    overflow: hidden;
 
 }
 .row > img{
@@ -92,10 +93,28 @@ nav{
     border-radius: 15px;
 
 }
-@media screen and (max-width:  1024){
+@media (max-width:688px){
+    .row{
+        --num-cols: 1;
+        --row-height: 200px;
+    }
+    .header a{
+        font-size: 42px;
+    }
+    .text-box h1{
+        font-size: 30px;
+    }
+}
+@media (min-width:689px) and (max-width: 920px){
     .row{
         --num-cols: 2;
         --row-height: 200px;
+    }
+    .header a{
+        font-size: 42px;
+    }
+    .text-box h1{
+        font-size: 40px;
     }
 }
 .btn a{

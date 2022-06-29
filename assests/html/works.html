@@ -7,25 +7,25 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
-        <div class="header">
-            <div class="inner_header">
-                <div class="logo">
-                    <h1>Mahesh Paul</h1>
-                </div>
-                <ul class="nav">
-                    <a href="../../index.html"><li>Home</li></a>
-                    <a href="about.html"><li>About</li></a>
-                    <a href="works.html"><li class="active">My works</li></a>
-                    <a href="academics.html"><li>Academics</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
             </div>
-        </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html" class="active">My works</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <section>
             <img src="../img/3/stars.png" id="stars">
             <img src="../img/3/moon.png" id="moon">
             <img src="../img/3/mountains_behind.png" id="mountains_behind">
-            <h2 id="text">My Works</h2>
+            <h2 id="text4">My Works</h2>
             <img src="../img/3/mountains_front.png" id="balloon">
             
         </section>
@@ -56,7 +56,7 @@
             let stars = document.getElementById('stars');
             let moon = document.getElementById('moon');
             let mountains_behind = document.getElementById('mountains_behind');
-            let text = document.getElementById('text')
+            let text = document.getElementById('text4')
             let mountains_front = document.getElementById('balloon');
     
             window.addEventListener('scroll', function(){

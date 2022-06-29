@@ -7,24 +7,24 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     </head>
     <body>
-        <div class="header">
-            <div class="inner_header">
-                <div class="logo">
-                    <h1>Mahesh Paul</h1>
-                </div>
-                <ul class="nav">
-                    <a href="../../index.html"><li>Home</li></a>
-                    <a href="about.html"><li class="active">About</li></a>
-                    <a href="works.html"><li>My works</li></a>
-                    <a href="academics.html"><li>Academics</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
+        <nav>
+            <div class="logo">
+                <h1>Mahesh Paul</h1>
             </div>
-        </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu"><i class="fa fa-bars"></i></label>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="works.html">My works</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <section>
             <img src="../img/1/stars1.png" id="stars">
             <img src="../img/2/moon2.png" id="moon">
-            <h2 id="text"><span style="padding-left:200px">About Me</span></h2>
+            <h2 id="text2"><span style="padding-left:200px">About Me</span></h2>
             <img src="../img/2/mountains_front2.png" id="balloon">
             
         </section>
@@ -41,7 +41,7 @@
         <script>
             let stars = document.getElementById('stars');
             let moon = document.getElementById('moon');
-            let text = document.getElementById('text')
+            let text = document.getElementById('text2')
             let mountain = document.getElementById('balloon');
     
             window.addEventListener('scroll', function(){
